@@ -2,7 +2,6 @@ const express=require('express')
 const nodemailer = require('nodemailer');
 const cors=require('cors');
 
-const e = require('express');
 const app=express();
 app.use(express.json());
 app.use(cors())
@@ -12,8 +11,8 @@ app.post('/mail',(req,res)=>{
     var transporter=nodemailer.createTransport({
         service:'gmail',
         auth:{
-            user:"reddy120799@gmail.com",
-            pass:"zwwxcdtwgxviwqao"
+            user:"abc@gmail.com",
+            pass:"password"
         }
     })
     const mailOptions={
