@@ -10,14 +10,14 @@ app.post('/mail',(req,res)=>{
     var transporter=nodemailer.createTransport({
         service:'gmail',
         auth:{
-            user:"reddy120799@gmail.com",
-            pass:"qxzalrjblhfsloht"
+            user:"abc@gmail.com",
+            pass:"djhdj"
         }
 
     })
     const mailOptions={
 
-        from:"reddy120799@gmail.com",
+        from:"abc@gmail.com",
         to:req.body.email,
         subject:req.body.subject,
         description:req.body.description,
